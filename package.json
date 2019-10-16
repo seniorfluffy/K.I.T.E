@@ -1,11 +1,27 @@
 {
-	"name": "K.I.T.E",
-	"version": "1.0.0",
-	"description": "Kite's intellegent task executer",
-	"main": "bot.js",
-	"author": "Seniorfluffy",
-	"dependencies": {
-		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-		"winston": "^3.2.1"
-	}
+  "name": "K.I.T.E",
+  "version": "1.0.0",
+  "description": "Kite's intellegent task executer",
+  "main": "bot.js",
+  "author": "Seniorfluffy",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "google-spreadsheet": "^2.0.8",
+    "googleapis": "^39.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seniorfluffy/K.I.T.E.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seniorfluffy/K.I.T.E/issues"
+  },
+  "homepage": "https://github.com/seniorfluffy/K.I.T.E#readme"
 }
