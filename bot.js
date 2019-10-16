@@ -41,11 +41,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             // Get all of the rows from the spreadsheet.
             doc.getRows(1, function (err, rows) {
                 rows.map((row) => {
-
                     var input = message.substring(1).split(" ")
-                    logger.info(input[0])
-                    logger.info(input[1])
-                    logger.info(input[2])
                     if (input[0].toLowerCase() == "player") {
                         if (input[1].toLowerCase() +" "+ input[2].toLowerCase() == row.playernamefirstlast.toLowerCase()) {
                             bot.sendMessage({
