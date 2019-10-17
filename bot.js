@@ -28,14 +28,14 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
     bot.sendMessage({
         to: "general",
-        message: "Bish-bAsh-bosh, Kite.io has planeshited into the server",
+        message: "Bish-bAsh-bosh, Kite.io has planeshifted into the server",
     });
 });
 //when somone sends a message
 bot.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == "!") {
         var stuff = message.substring(1)
-        var doc = new GoogleSpreadsheet('1oCgn7laejTuV0lqdxDqvi3qNhuW6JtSfwv26pmLrS94');
+        var doc = new GoogleSpreadsheet('1oCgn7laejTuV0lqdxDqvi3qNhuW6JtSfwv26pmLrS94'); //Guaranteed?
         // Authenticate with the Google Spreadsheets API
         doc.useServiceAccountAuth(creds, function (err) {
             // Get all of the rows from the spreadsheet.
